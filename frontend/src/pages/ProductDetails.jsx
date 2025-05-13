@@ -3,7 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import mockProducts from '../utils/mockProducts';
 import { useCart } from '../context/CardContext';
 import ShippingForm from '../components/ShippingForm';
-import PayPalButton from '../components/PayPalButton';
+import PayPalButton from '../components/PaypalButton';
 
 const ProductDetails = () => {
   const { id } = useParams();
