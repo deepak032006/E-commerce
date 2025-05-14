@@ -5,7 +5,7 @@ const PayPalButton = ({ amount }) => {
   const [clientId, setClientId] = useState(null);
 
   useEffect(() => {
-    fetch('https://e-commerce-5-48ed.onrender.com/api/config/paypal/clientId') // Correct API endpoint
+    fetch('https://e-commerce-8-h5f5.onrender.com/api/config/paypal/clientId') // Correct API endpoint
       .then((res) => {
         console.log('Response status:', res.status); // To check the response code
         if (!res.ok) {
