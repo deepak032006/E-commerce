@@ -17,7 +17,7 @@ const Register = ({ setUser }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('https://e-commerce-2-5h9u.onrender.com/api/auth/register', formData);
+      await axios.post('http://localhost:5000/api/auth/register', formData);
       setMessage('✅ Registered successfully!');
       
       // After registration, check if there was a "buy now" intent
