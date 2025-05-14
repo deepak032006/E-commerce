@@ -19,7 +19,7 @@ function Login({ setUser }) {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('https://e-commerce-2-5h9u.onrender.com/api/auth/login', loginData);
+      const res = await axios.post('https://e-commerce-8-h5f5.onrender.com/api/auth/login', loginData);
 
       setUser(res.data.user);
 

@@ -196,10 +196,7 @@ const ProductDetails = () => {
         </div>
       </div>
 
-      {/* PayPal Button */}
-      <div className="mt-6">
-        <PayPalButton amount={product.price * quantity} />
-      </div>
+      
 
       {/* Shipping Form */}
       {showShippingForm && <ShippingForm product={product} />}
