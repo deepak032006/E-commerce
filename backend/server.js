@@ -19,9 +19,21 @@ const app = express();
 // Middleware setup
 app.use(express.json());
 app.use(cookieParser());
+const allowedOrigins = [
+  'http://localhost:5173',
+  'https://e-commerce-6-9tm1.onrender.com'
+];
+
 app.use(cors({
-    origin: 'http://localhost:5173',
-    credentials: true
+  origin: function (origin, callback) {
+    // Allow requests with no origin (like mobile apps or curl)
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
+  credentials: true
 }));
 
 
