@@ -196,8 +196,11 @@ const ProductDetails = () => {
         </div>
       </div>
 
+<<<<<<< HEAD
       
 
+=======
+>>>>>>> c88cc98140c65a66556018e414c8a9b41f4e1e82
       {/* Shipping Form */}
       {showShippingForm && <ShippingForm product={product} />}
     </div>

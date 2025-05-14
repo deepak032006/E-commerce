@@ -27,7 +27,6 @@ app.use(cors({
   credentials: true
 }));
 
-
 // Routes
 app.use('/api/auth', authRoutes);
 app.use('/api/upload', uploadRoutes);
