@@ -93,7 +93,7 @@ const mockProducts = [
     description: '(Black)',
     price: 79,
      reviews: [] ,
-    image: 'TATA 1mg Digital Weighing Scale, Premium Weighing Machine for Precise Measurement Weighing Scale'
+    image: 'https://m.media-amazon.com/images/I/51ULsOwhQeL._SX522_.jpg'
   }
   ,
    {

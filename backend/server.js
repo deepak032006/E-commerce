@@ -21,8 +21,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(cors({
   origin: [
-    'http://localhost:5173', // Local development
-    'https://e-commerce-9-yr5g.onrender.com' // Deployed frontend
+    'http://localhost:5173', 
   ],
   credentials: true
 }));
@@ -40,7 +39,7 @@ app.get('/', (req, res) => {
 });
 
 if (process.env.NODE_ENV === 'production') {
-  // Use __dirname to get the absolute path
+ const dirPath = path.resolve()
   app.use(express.static(path.join(__dirname, "../frontend/dist")));
 
   app.get('*', (req, res) => {
