@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { PayPalScriptProvider, PayPalButtons } from '@paypal/react-paypal-js';
 
+
 const PayPalButton = ({ amount }) => {
   const [clientId, setClientId] = useState(null);
 
   useEffect(() => {
-    fetch('https://localhost:5000/api/config/paypal/clientId') // Correct API endpoint
+   fetch('http://localhost:5000/api/config/paypal/clientId')
+
+
       .then((res) => {
         console.log('Response status:', res.status); // To check the response code
         if (!res.ok) {
