@@ -38,14 +38,14 @@ app.get('/', (req, res) => {
   res.send('API is running...');
 });
 
-if (process.env.NODE_ENV === 'production') {
- const dirPath = path.resolve()
-  app.use(express.static(path.join(__dirname, "../frontend/dist")));
+// if (process.env.NODE_ENV === 'production') {
+//  const dirPath = path.resolve()
+//   app.use(express.static(path.join(__dirname, "../frontend/dist")));
 
-  app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, "../frontend", 'dist', 'index.html'));
-  });
-}
+//   app.get('*', (req, res) => {
+//     res.sendFile(path.join(__dirname, "../frontend", 'dist', 'index.html'));
+//   });
+// }
 
 // Start server
 const PORT = process.env.PORT || 5000;
